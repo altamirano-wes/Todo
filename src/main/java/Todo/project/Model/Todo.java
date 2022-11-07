@@ -13,8 +13,10 @@ public class Todo {
     @Column(name="description")
     private String description;
 
-    @Column(name = "person_id")
-    private Integer person_id;
+    //@Column(name = "person_id")
+    //private Integer person_id;
+    @Column(name = "personID")
+    private Integer personID;
 
     @Column(name = "completed")
     private boolean completed = false;
@@ -24,7 +26,7 @@ public class Todo {
     }
 
     public Integer getPersonID() {
-        return person_id;
+        return personID;
     }
 
     public boolean getCompleted(){
@@ -36,7 +38,7 @@ public class Todo {
     }
 
     public void setPersonID(Integer p) {
-        this.person_id = p;
+        this.personID = p;
     }
 
     public void setCompleted(Boolean b){

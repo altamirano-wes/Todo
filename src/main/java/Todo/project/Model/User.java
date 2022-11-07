@@ -18,7 +18,7 @@ public class User {
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "person_id", referencedColumnName = "id")
+    @JoinColumn(name = "personID", referencedColumnName = "id")
     private List<Todo> todos;
 
     public String getName(){
@@ -35,7 +35,7 @@ public class User {
 
     @Override
     public String toString(){
-        return " Name: "+name+" with User ID: "+id;
+        return name + " with User ID: " + id;
     }//toString
 
 }//User
